@@ -36,11 +36,6 @@ let beats = {
         button: new Button("#FFFFFF", 76),
     }
 }
-
-/**
- * Function to play the beat upon a press of key
- * HINT: use the keyCode
- */
 triggerBeat = (event) => {
     const keyCode = event.keyCode;
     if(keyCode in beats){
@@ -49,9 +44,4 @@ triggerBeat = (event) => {
         keyPress.button.select();
     }
 }
-
-/**
- * Keydown listener to fire triggerBeat function
- * HINT: Log the keyCode of the key
- */
  document.addEventListener("keydown", triggerBeat);
